@@ -325,83 +325,83 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
+.arduino {
   	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
+  	-moz-animation: arduino 2s ease;
+  	-webkit-animation: arduino 2s ease;
 }
-.illustrator {
+.cpp {
   	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+  	-moz-animation: cpp 2s ease;
+  	-webkit-animation: cpp 2s ease;
 }
-.wordpress {
+.cs {
   	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+  	-moz-animation: cs 2s ease;
+  	-webkit-animation: cs 2s ease;
 }
-.css {
+.react {
   	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+  	-moz-animation: react 2s ease;
+  	-webkit-animation: react 2s ease;
 }
-.html5 {
+.electronics {
   	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+  	-moz-animation: electronics 2s ease;
+  	-webkit-animation: electronics 2s ease;
 }
-.jquery {
+.javascript {
   	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
+  	-moz-animation: javascript 2s ease;
+  	-webkit-animation: javascript 2s ease;
 }
 
-@-moz-keyframes photoshop {
+@-moz-keyframes arduino {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-moz-keyframes illustrator {
+@-moz-keyframes cpp {
   0%   { width: 0px;  }
   100% { width: 55%;  }
 }
-@-moz-keyframes wordpress {
+@-moz-keyframes cs {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
-@-moz-keyframes css {
+@-moz-keyframes react {
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
-@-moz-keyframes html5 {
+@-moz-keyframes electronics {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-moz-keyframes jquery {
+@-moz-keyframes javascript {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
 
-@-webkit-keyframes photoshop {
+@-webkit-keyframes arduino {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-webkit-keyframes illustrator {
+@-webkit-keyframes cpp {
   0%   { width: 0px;  }
   100% { width: 55%;  }
 }
-@-webkit-keyframes wordpress {
+@-webkit-keyframes cs {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
-@-webkit-keyframes css {
+@-webkit-keyframes react {
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
-@-webkit-keyframes html5 {
+@-webkit-keyframes electronics {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes jquery {
+@-webkit-keyframes javascript {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }

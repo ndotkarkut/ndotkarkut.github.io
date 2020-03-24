@@ -173,7 +173,7 @@ class Portfolio extends Component {
               </span>
             </div>
             <div className="link-box">
-              <a href="http://www.behance.net">Details</a>
+              <a href="http://www.google.com">Details</a>
               <a className="popup-modal-dismiss">Close</a>
             </div>
           </div>

@@ -12,11 +12,7 @@ class Contact extends Component {
           </div>
           <div className="ten columns">
             <p className="lead">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit.
+              {this.props.data.summary}
             </p>
           </div>
         </div>
@@ -31,7 +27,7 @@ class Contact extends Component {
                   </label>
                   <input
                     type="text"
-                    defaultValue
+                    defaultValue={''}
                     size={35}
                     id="contactName"
                     name="contactName"
@@ -43,7 +39,7 @@ class Contact extends Component {
                   </label>
                   <input
                     type="text"
-                    defaultValue
+                    defaultValue={''}
                     size={35}
                     id="contactEmail"
                     name="contactEmail"
@@ -53,7 +49,7 @@ class Contact extends Component {
                   <label htmlFor="contactSubject">Subject</label>
                   <input
                     type="text"
-                    defaultValue
+                    defaultValue={''}
                     size={35}
                     id="contactSubject"
                     name="contactSubject"
@@ -93,15 +89,15 @@ class Contact extends Component {
             <div className="widget widget_contact">
               <h4>Address and Phone</h4>
               <p className="address">
-                Jonathan Doe
+                {this.props.data.details.name}
                 <br />
-                1600 Amphitheatre Parkway <br />
-                Mountain View, CA 94043 US
+                {this.props.data.details.street} <br />
+                {this.props.data.details.city}
                 <br />
-                <span>(123) 456-7890</span>
+                <span>{this.props.data.details.phone}</span>
               </p>
             </div>
-            <div className="widget widget_tweets">
+            {/* <div className="widget widget_tweets">
               <h4 className="widget-title">Latest Tweets</h4>
               <ul id="twitter">
                 <li>
@@ -128,7 +124,7 @@ class Contact extends Component {
                   </b>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </aside>
         </div>
       </section>

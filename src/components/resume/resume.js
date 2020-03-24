@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 
+import Skill from './skillListItem';
+
 class Resume extends Component {
+  skills = ['arduino', 'c++', 'c#', 'react', 'electronics', 'javascript'];
+
+  // skills = ['photoshop', 'illustrator', 'wordpress', 'css', 'html5', 'jquery'];
+
   render() {
     return (
       <section id="resume">
@@ -15,24 +21,18 @@ class Resume extends Component {
           <div className="nine columns main-col">
             <div className="row item">
               <div className="twelve columns">
-                <h3>University of Life</h3>
+                <h3>{this.props.data.collegeEducation.college}</h3>
                 <p className="info">
-                  Master in Graphic Design <span>•</span>{' '}
-                  <em className="date">April 2007</em>
+                  {this.props.data.collegeEducation.degree} <span>•</span>{' '}
+                  <em className="date">
+                    {this.props.data.collegeEducation.date}
+                  </em>
                 </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                  natoque penatibus et magnis dis parturient montes, nascetur
-                  ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                  eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                  pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                  Nullam dictum felis eu pede mollis pretium.
-                </p>
+                <p>{this.props.data.collegeEducation.summary}</p>
               </div>
             </div>{' '}
             {/* item end */}
-            <div className="row item">
+            {/* <div className="row item">
               <div className="twelve columns">
                 <h3>School of Cool Designers</h3>
                 <p className="info">
@@ -48,7 +48,7 @@ class Resume extends Component {
                   odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
                 </p>
               </div>
-            </div>{' '}
+            </div>{' '} */}
             {/* item end */}
           </div>{' '}
           {/* main-col end */}
@@ -65,37 +65,36 @@ class Resume extends Component {
           <div className="nine columns main-col">
             <div className="row item">
               <div className="twelve columns">
-                <h3>Awesome Design Studio</h3>
+                <h3>{this.props.data.workPlace1.company}</h3>
                 <p className="info">
-                  Senior UX Designer <span>•</span>{' '}
-                  <em className="date">March 2010 - Present</em>
+                  {this.props.data.workPlace1.jobTitle} <span>•</span>{' '}
+                  <em className="date">{this.props.data.workPlace1.date}</em>
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                  natoque penatibus et magnis dis parturient montes, nascetur
-                  ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                  eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                  pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                  Nullam dictum felis eu pede mollis pretium.
+                  <span>•</span> {this.props.data.workPlace1.summary.point1}
+                </p>
+                <p>
+                  <span>•</span> {this.props.data.workPlace1.summary.point2}
                 </p>
               </div>
             </div>{' '}
             {/* item end */}
             <div className="row item">
               <div className="twelve columns">
-                <h3>Super Cool Studio</h3>
+                <h3>{this.props.data.workPlace2.company}</h3>
                 <p className="info">
-                  UX Designer <span>•</span>{' '}
-                  <em className="date">March 2007 - February 2010</em>
+                  {this.props.data.workPlace2.jobTitle}
+                  <span>•</span>{' '}
+                  <em className="date">{this.props.data.workPlace2.date}</em>
                 </p>
                 <p>
-                  This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
-                  vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                  bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
-                  sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a
-                  odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
+                  <span>•</span> {this.props.data.workPlace2.summary.point1}
+                </p>
+                <p>
+                  <span>•</span> {this.props.data.workPlace2.summary.point2}
+                </p>
+                <p>
+                  <span>•</span> {this.props.data.workPlace2.summary.point3}
                 </p>
               </div>
             </div>{' '}
@@ -123,30 +122,9 @@ class Resume extends Component {
             </p>
             <div className="bars">
               <ul className="skills">
-                <li>
-                  <span className="bar-expand photoshop" />
-                  <em>Photoshop</em>
-                </li>
-                <li>
-                  <span className="bar-expand illustrator" />
-                  <em>Illustrator</em>
-                </li>
-                <li>
-                  <span className="bar-expand wordpress" />
-                  <em>Wordpress</em>
-                </li>
-                <li>
-                  <span className="bar-expand css" />
-                  <em>CSS</em>
-                </li>
-                <li>
-                  <span className="bar-expand html5" />
-                  <em>HTML5</em>
-                </li>
-                <li>
-                  <span className="bar-expand jquery" />
-                  <em>jQuery</em>
-                </li>
+                {this.skills.map(curVal => (
+                  <Skill data={curVal} />
+                ))}
               </ul>
             </div>
             {/* end skill-bars */}

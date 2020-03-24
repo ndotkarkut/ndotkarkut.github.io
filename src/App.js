@@ -12,22 +12,22 @@ import Testimonials from './components/testimonials/testimonials';
 
 import headerData from './components/header/headerData';
 import aboutData from './components/about/aboutData';
-// import resumeData from './components/resume/resumeData';
-// import portfolioData from './components/portfolio/portfolioData';
+import resumeData from './components/resume/resumeData';
+import portfolioData from './components/portfolio/portfolioData';
 // import testimonialData from './components/testimonials/testimonialData';
-// import contactData from './components/contactus/contactData';
-// import footerData from './components/footer/footerData';
+import contactData from './components/contactus/contactData';
+import footerData from './components/footer/footerData';
 
 function App() {
   return (
     <div>
       <Header data={headerData}/>
       <About data={aboutData}/>
-      {/* <Resume data={resumeData}/>
+      <Resume data={resumeData}/>
       <Portfolio data={portfolioData} />
-      <Testimonials data={testimonialData} />
+      {/* <Testimonials data={testimonialData} /> */}
       <Contact data={contactData} />
-      <Footer data={footerData} /> */}
+      <Footer data={footerData} />
     </div>
   );
 }

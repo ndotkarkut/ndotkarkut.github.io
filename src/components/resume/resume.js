@@ -113,12 +113,11 @@ class Resume extends Component {
           </div>
           <div className="nine columns main-col">
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt.
+              In my free time, I like to program, specifically develop web applications
+              using React, and tinker with Arduino. Programming and electronics interest
+              me the most, and they are two of my favorite hobbies to do when I am at home
+              or when I am interning at Nova XR Media, or working at the Zahn Innovation 
+              Center!
             </p>
             <div className="bars">
               <ul className="skills">
